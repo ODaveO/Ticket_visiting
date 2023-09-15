@@ -1,40 +1,53 @@
+//import 'dart:html';
+
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      // Application name
-      title: 'Flutter Hello World',
-      // Application theme data, you can set the colors for the application as
-      // you want
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+void main() {
+  runApp(slwNomeWidget()
+      //si dice al telefono di eseguire qualcosa
+      /*
+    MaterialApp(
+      //l'app materiale è ciò che viene eseguita dal telefono
+      home: Scaffold(
+        backgroundColor: Colors.red,
+        body: Container(),
       ),
-      // A widget which will be started on application startup
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
+    ),*/
+      );
 }
 
-class MyHomePage extends StatelessWidget {
-  final String title;
-  const MyHomePage({super.key, required this.title});  
-
+class slwNomeWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        // The title text which will be shown on the action bar
-        title: Text(title),
-      ),
-      body: Center(
-        child: Text(
-          'Hello, World!',
+    //return Container(); //instead Container we replace it with MaterialApp content
+    return MaterialApp(
+      //l'app materiale è ciò che viene eseguita dal telefono
+      home: Scaffold(
+        backgroundColor: Colors.teal,
+        body: SafeArea(
+          child: Column(
+            //verticalDirection:VerticalDirection.down, //Where to begin? up - down
+            //mainAxisAlignment:MainAxisAlignment.spaceBetween, //vertical alignment
+            crossAxisAlignment:
+                CrossAxisAlignment.center, //start - center - end
+            children: <Widget>[
+              CircleAvatar(
+                //backgroundImage: NetworkImage(  //immagine da URL
+                //'https://www.rainews.it/resizegd/768x-/dl/img/2022/05/29/1653823359813_Immagine__.png'),  //immagine da URL
+                backgroundImage: AssetImage('/images/monna.png'),
+                radius: 50,
+              ),
+              Text(
+                'Davide A.',
+                style: TextStyle(
+                  fontSize: 40,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Pacifico',
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
