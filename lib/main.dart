@@ -43,9 +43,9 @@ class slwNomeWidget extends StatelessWidget {
                   fontSize: 40,
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
-                  fontFamily: 'Pacifico',
+                  fontFamily: 'Fuggles-Regular',
                 ),
-              )
+              ),
             ],
           ),
         ),

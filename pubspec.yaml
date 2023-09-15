@@ -20,10 +20,10 @@ flutter:
   assets:
      - images/
   fonts:
-  - family: Pacifico,
+  - family: Fuggles-Regular,
     fonts:
      - asset: fonts/Fuggles-Regular.ttf
-
+       style: italic
 
 
   # assets:
