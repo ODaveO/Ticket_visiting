@@ -20,10 +20,30 @@ flutter:
   assets:
      - images/
   fonts:
-  - family: Fuggles-Regular,
+  - family: Fuggles,
     fonts:
-     - asset: fonts/Fuggles-Regular.ttf
-       style: italic
+      - asset: fonts/Fuggles-Regular.ttf
+
+  - family: Kanit,
+    fonts:
+    - asset: fonts/Kanit-Regular.ttf
+
+
+  - family: Pacifico,
+    fonts:
+    - asset: fonts/Pacifico-Regular.ttf
+
+  - family: SourceSans3-Regular,
+    fonts:
+    - asset: fonts/SourceSans3-Regular.ttf
+
+
+  #fonts:
+  #- family: Kanit-Regular,
+  #  fonts:
+  #   - asset: fonts/Kanit-Regular.ttf
+  #     style: italic
+  
 
 
   # assets:

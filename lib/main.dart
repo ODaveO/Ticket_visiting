@@ -40,10 +40,20 @@ class slwNomeWidget extends StatelessWidget {
               Text(
                 'Davide A.',
                 style: TextStyle(
-                  fontSize: 40,
+                  fontSize: 30,
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
-                  fontFamily: 'Fuggles-Regular',
+                  fontFamily: 'Fuggles',
+                ),
+              ),
+              Text(
+                'FLUTTER DEVELOPER',
+                style: TextStyle(
+                  //fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'SourceSans3-Regular',
+                  color: Colors.teal.shade200, //shade è l'ombreggiatura
+                  letterSpacing: 2.5, //spaziatura tra le lettere
                 ),
               ),
             ],
