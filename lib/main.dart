@@ -56,6 +56,19 @@ class slwNomeWidget extends StatelessWidget {
                   letterSpacing: 2.5, //spaziatura tra le lettere
                 ),
               ),
+              SizedBox(height: 50),
+              Container(
+                height: 50,
+                color: Colors.white,
+                child: Row(children: <Widget>[
+                  Icon(
+                    Icons.phone,
+                    color: Colors.green,
+                    size: 24.0,
+                    semanticLabel: 'Text to announce in accessibility modes',
+                  ),
+                ]),
+              )
             ],
           ),
         ),
