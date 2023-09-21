@@ -28,6 +28,8 @@ class slwNomeWidget extends StatelessWidget {
           child: Column(
             //verticalDirection:VerticalDirection.down, //Where to begin? up - down
             //mainAxisAlignment:MainAxisAlignment.spaceBetween, //vertical alignment
+
+            mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment:
                 CrossAxisAlignment.center, //start - center - end
 
@@ -45,7 +47,7 @@ class slwNomeWidget extends StatelessWidget {
                 height: 10,
               ),
               Text(
-                'Davide Acquaviva',
+                'Davide A.',
                 style: TextStyle(
                   fontSize: 30,
                   color: Colors.white,
@@ -63,7 +65,14 @@ class slwNomeWidget extends StatelessWidget {
                   letterSpacing: 2.5, //spaziatura tra le lettere
                 ),
               ),
-              SizedBox(height: 40),
+              SizedBox(
+                height: 40,
+                width: 500,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                  indent: 150,
+                ),
+              ),
               Card(
                 child: ListTile(
                   leading: Icon(
@@ -73,7 +82,7 @@ class slwNomeWidget extends StatelessWidget {
                     semanticLabel: 'Text to announce in accessibility modes',
                   ),
                   title: Text(
-                    '+39 349 4223607',
+                    '+39 349 1234567',
                     style: TextStyle(
                       color: Colors.teal.shade900,
                       fontFamily: 'SourceSans3-Regular',
@@ -93,7 +102,7 @@ class slwNomeWidget extends StatelessWidget {
                     semanticLabel: 'Text to announce in accessibility modes',
                   ),
                   title: Text(
-                    'davacquaviva@gmail.com',
+                    'info@gmail.com',
                     style: TextStyle(
                       color: Colors.teal.shade900,
                       fontFamily: 'SourceSans3-Regular',
