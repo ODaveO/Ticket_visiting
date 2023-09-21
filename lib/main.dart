@@ -64,12 +64,12 @@ class slwNomeWidget extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 50),
-              Container(
+              Card(
                 //PHONE NUMBER
                 color: Colors.white,
-                padding: EdgeInsets.all(10),
+                //padding: EdgeInsets.all(10),
                 margin: EdgeInsets.only(left: 15, right: 15),
-                width: 280,
+                //width: 280,
                 /*
                 margin: EdgeInsets.symmetric(
                   vertical: 10,
@@ -77,53 +77,59 @@ class slwNomeWidget extends StatelessWidget {
                 ),
                 */
 
-                height: 55,
-                child: Row(children: <Widget>[
-                  Icon(
-                    Icons.phone_android_rounded,
-                    color: Colors.green,
-                    size: 40.0,
-                    semanticLabel: 'Text to announce in accessibility modes',
-                  ),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  Text(
-                    '+39 349 4223607',
-                    style: TextStyle(
-                      color: Colors.teal.shade900,
-                      fontFamily: 'SourceSans3-Regular',
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ]),
-              ),
-              SizedBox(height: 20),
-              Container(
-                margin: EdgeInsets.only(left: 20, right: 20),
-                padding: EdgeInsets.all(10),
-                color: Colors.white,
-                height: 60,
-                width: 320,
-                child: Row(
-                  children: [
+                //height: 55,
+                child: Padding(
+                  padding: EdgeInsets.all(5),
+                  child: Row(children: <Widget>[
                     Icon(
-                      Icons.mail,
-                      color: Colors.teal.shade300,
-                      size: 40,
+                      Icons.phone_android_rounded,
+                      color: Colors.green,
+                      size: 40.0,
+                      semanticLabel: 'Text to announce in accessibility modes',
                     ),
                     SizedBox(
                       width: 20,
                     ),
                     Text(
-                      'davacquaviva@gmail.com',
+                      '+39 349 4223607',
                       style: TextStyle(
-                        fontSize: 15,
+                        color: Colors.teal.shade900,
+                        fontFamily: 'SourceSans3-Regular',
+                        fontSize: 20,
                         fontWeight: FontWeight.bold,
                       ),
-                    )
-                  ],
+                    ),
+                  ]),
+                ),
+              ),
+              SizedBox(height: 20),
+              Card(
+                margin: EdgeInsets.only(left: 20, right: 20),
+                //padding: EdgeInsets.all(10),
+                color: Colors.white,
+                //height: 60,
+                //width: 320,
+                child: Padding(
+                  padding: EdgeInsets.all(5),
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.mail,
+                        color: Colors.teal.shade300,
+                        size: 40,
+                      ),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Text(
+                        'davacquaviva@gmail.com',
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ),
 
