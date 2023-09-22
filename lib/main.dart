@@ -30,21 +30,14 @@ class slwNomeWidget extends StatelessWidget {
             //mainAxisAlignment:MainAxisAlignment.spaceBetween, //vertical alignment
 
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment:
-                CrossAxisAlignment.center, //start - center - end
+            //crossAxisAlignment: CrossAxisAlignment.center, //start - center - end
 
             children: <Widget>[
-              SizedBox(
-                height: 50,
-              ),
               CircleAvatar(
                 //backgroundImage: NetworkImage(  //immagine da URL
                 //'https://www.rainews.it/resizegd/768x-/dl/img/2022/05/29/1653823359813_Immagine__.png'),  //immagine da URL
                 backgroundImage: AssetImage('/images/monna.png'),
                 radius: 50,
-              ),
-              SizedBox(
-                height: 10,
               ),
               Text(
                 'Davide A.',
@@ -52,13 +45,13 @@ class slwNomeWidget extends StatelessWidget {
                   fontSize: 30,
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
-                  fontFamily: 'Fuggles',
+                  fontFamily: 'Pacifico',
                 ),
               ),
               Text(
                 'FLUTTER DEVELOPER',
                 style: TextStyle(
-                  //fontSize: 20,
+                  fontSize: 20,
                   fontWeight: FontWeight.bold,
                   fontFamily: 'SourceSans3-Regular',
                   color: Colors.teal.shade200, //shade è l'ombreggiatura
@@ -66,11 +59,11 @@ class slwNomeWidget extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 40,
-                width: 500,
+                height: 20,
+                width: 150,
                 child: Divider(
                   color: Colors.teal.shade100,
-                  indent: 150,
+                  //indent: 150,
                 ),
               ),
               Card(
